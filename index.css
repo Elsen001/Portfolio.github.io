@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body,
+html {
+  height: 100%; }
+
+body {
+  background: url("./img/laptop_room_on_the_desk-Digital_products_HD_widescreen_Wallpaper_1366x768.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed; }
+
+.active {
+  border-bottom: 1px solid red; }
+
+nav {
+  height: 80px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    nav ul li {
+      font-size: 25px;
+      list-style-type: none;
+      margin: 50px; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: "Satisfy", cursive; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 600px;
+  margin-top: 50px; }
+  .container .item1 {
+    width: 500px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .container .item1 p {
+      font-size: 25px;
+      color: white;
+      font-family: "Satisfy", cursive; }
+  .container .item2 {
+    width: 500px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .container .item2 div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 90%;
+      height: 50px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      margin: 10px; }
+      .container .item2 div i {
+        font-size: 45px;
+        margin: 10px;
+        cursor: pointer; }
+      .container .item2 div a {
+        color: black;
+        font-size: 22px; }
+        .container .item2 div a:hover {
+          color: white; }
+
+@media (max-width: 800px) {
+  .container .item1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%; }
+  .container .item2 {
+    width: 400px; }
+    .container .item2 div i {
+      font-size: 30px; }
+    .container .item2 div a {
+      font-size: 16px; } }
+.project {
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .project .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .project .header h1 {
+      font-size: 50px;
+      font-family: "Satisfy", cursive; }
+  .project .p1 {
+    width: 500px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    text-align: left;
+    margin: 10px; }
+    .project .p1 div {
+      width: 90%;
+      height: 30px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 10px; }
+      .project .p1 div li {
+        font-size: 30px;
+        color: white; }
+      .project .p1 div a {
+        font-size: 22px;
+        position: absolute;
+        right: 0;
+        color: red; }
+
+@media (max-width: 1070px) {
+  .project .p1 {
+    margin: 0; }
+    .project .p1 div li {
+      font-size: 20px; } }
+@media (max-width: 650px) {
+  .project .p1 {
+    margin: 0; }
+    .project .p1 div li {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: url("./img/laptop_room_on_the_desk-Digital_products_HD_widescreen_Wallpaper_1366x768.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.active {
+    border-bottom: 1px solid red;
+}
+
+nav {
+    height: 80px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        li {
+            font-size: 25px;
+            list-style-type: none;
+            margin: 50px;
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Satisfy", cursive;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+    margin-top: 50px;
+    .item1 {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 25px;
+            color: white;
+            font-family: "Satisfy", cursive;
+        }
+    }
+    .item2 {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        div {
+            display: flex;
+            width: 90%;
+            height: 50px;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+            i {
+                font-size: 45px;
+                margin: 10px;
+                cursor: pointer;
+            }
+            a {
+                color: black;
+                font-size: 22px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        .item1 {
+            justify-content: center;
+            width: 90%;
+        }
+        .item2 {
+            width: 400px;
+            div {
+                i {
+                    font-size: 30px;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.project {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-size: 50px;
+            font-family: "Satisfy", cursive;
+        }
+    }
+    .p1 {
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: left;
+        margin: 10px;
+        div{
+            width: 90%;
+            height: 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            li {
+                font-size: 30px;
+                color: white;
+
+                
+            }
+            a {
+                font-size: 22px;
+                position: absolute;
+                right: 0;
+                color: red;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:1070px){
+    .project{
+        .p1{
+            margin: 0;
+           div{
+               li{
+                   font-size: 20px;
+               }
+           }
+        }
+    }
+}
+
+@media (max-width:650px){
+    .project{
+        .p1{
+            margin: 0;
+           div{
+               li{
+                   font-size: 20px;
+               }
+           }
+        }
+    }
+}
